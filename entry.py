@@ -1,5 +1,4 @@
 '''loging entry point'''
-import sys
 from getpass import getpass
 import argparse
 from colorama import Style,Fore,init
@@ -39,8 +38,8 @@ def entry() -> None:
         print('Checking credentials')
         addresses = []
         for i in addr:
-            cisco_get = CiscoGet.CiscoGet(i,username,passwd,secret)
-            cred_check = cisco_get.hostname
+            # cisco_get = CiscoGet.CiscoGet(i,username,passwd,secret).hostname
+            cred_check = CiscoGet.CiscoGet(i,username,passwd,secret).hostname
             if 'Bad Username/Password' not in cred_check:
                 print(Style.BRIGHT,Fore.CYAN,
                       f"[+] Credentials are good for {i}",
@@ -62,4 +61,4 @@ def entry() -> None:
         # menu()
     except KeyboardInterrupt:
         print("\nCtl C was pressed!\nGoodbye!")
-        sys.exit(9)
+        return 1

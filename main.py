@@ -1,5 +1,4 @@
 '''Main program'''
-import sys
 from colorama import Fore,Style,init
 import entry
 from zip_up import lin_zipper
@@ -97,7 +96,7 @@ def menu() -> None:
                                              secret)
                         cisco_get.write_mem()
                     cisco_get.net_connect.disconnect()
-                    sys.exit(9)
+                    return 1
                 elif opt == '2':
                     print('GoodBye!')
                     for i in addr:
@@ -106,7 +105,7 @@ def menu() -> None:
                                              passwd,
                                              secret)
                         cisco_get.net_connect.disconnect()
-                        sys.exit(9)
+                        return 1
     except ValueError:
         print('\nYou hit a invalid key\nPlease Try Again\n\n')
         return menu()
@@ -128,7 +127,7 @@ def menu() -> None:
             if opt.capitalize() == 'N':
                 return menu()
             elif opt.capitalize() == 'Y':
-                sys.exit(9)
+                return 1
         except KeyboardInterrupt:
             pass
     finally:

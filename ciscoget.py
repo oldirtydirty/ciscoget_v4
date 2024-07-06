@@ -1,5 +1,4 @@
 """Cisco tool to get all the output needed to submit switch configs"""
-import sys
 from os import makedirs,getlogin,path
 from netmiko import ConnectHandler, NetmikoAuthenticationException, NetmikoTimeoutException
 from colorama import Fore,Style
@@ -51,7 +50,7 @@ class CiscoGet:
                   '[-] Try it again',
                   Style.RESET_ALL
                   )
-            sys.exit(9)
+            return
         except NetmikoTimeoutException:
             print(Style.BRIGHT,Fore.RED,
                   '\n[-] Network Timeout!',
@@ -65,7 +64,7 @@ class CiscoGet:
                   '[-] Verify IP Address.',
                   Style.RESET_ALL
                   )
-            sys.exit(9)
+            return
     def check_dir(self) -> None:
         '''Check if Directory Exists'''
         check_folder = path.isdir(self.dir_location)
