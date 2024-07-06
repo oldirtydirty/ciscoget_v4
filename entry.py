@@ -7,7 +7,7 @@ from display_menu import display_menu
 from multi_addr import multi_addr
 import ciscoget as CiscoGet
 
-__version__= '4.0'
+__version__= '4.1'
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s",
