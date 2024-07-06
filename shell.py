@@ -5,7 +5,7 @@ def menu(addr):
     '''Menu List'''
     print('Main menu\n' + '-'*40)
     for menuitem in enumerate(addr):
-        print(str(menuitem[0]) + ': ' + menuitem[1])
+        print(str(menuitem[0]) + ': ' + menuitem[1].lstrip())
     print('-'*40)
 
     choice = input('Please enter your choice: ')

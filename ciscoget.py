@@ -25,10 +25,10 @@ class CiscoGet:
                                          'Desktop/SwitchConfigs/', #linux
                                            self.hostname,
                                            '/'])
-            self.dir_location = "".join([f'C:\\Users\\{self.current_user}\\',
-                                         'Desktop\\',
-                                         'SwitchConfigs\\',
-                                         self.hostname,'\\'])
+            # self.dir_location = "".join([f'C:\\Users\\{self.current_user}\\',
+            #                              'Desktop\\',
+            #                              'SwitchConfigs\\',
+            #                              self.hostname,'\\'])
 
         except NetmikoAuthenticationException:
             print(Style.BRIGHT,Fore.RED,
