@@ -45,6 +45,11 @@ def show_menu() -> None:
           'Log into a new switch'
           )
     print(Style.BRIGHT,Fore.CYAN,
+          '[9]',
+          Style.RESET_ALL,
+          'Zip SwitchConfigs'
+          )
+    print(Style.BRIGHT,Fore.CYAN,
           '[0]',
           Style.RESET_ALL,
           'Exit the program.'

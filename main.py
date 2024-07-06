@@ -2,6 +2,7 @@
 import sys
 from colorama import Fore,Style,init
 import entry
+from zip_up import lin_zipper
 from google_auth import g_auth
 from onclick import OnClick
 from display_menu import display_menu
@@ -73,6 +74,8 @@ def menu() -> None:
                              ).write_mem()
             elif option == '8':
                 return menu()
+            elif option == '9':
+                lin_zipper()
             elif option == '99':
                 g_auth(addr,username,passwd,secret)
             elif option == '0':
