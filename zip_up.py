@@ -21,4 +21,3 @@ def win_zipper():
     ouput_zip = f'C:\\Users\\{user}\\Desktop\\'
     shutil.make_archive("".join([ouput_zip,site,'_',str(date.today())]) ,'zip', zip_directory)
     return
-
