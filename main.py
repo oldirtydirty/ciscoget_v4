@@ -6,6 +6,7 @@ from google_auth import g_auth
 from onclick import OnClick
 from display_menu import display_menu
 from show_menu import show_menu
+from ac_main import ac_main
 import ciscoget as CiscoGet
 
 init()
@@ -75,6 +76,8 @@ def menu() -> None:
                 return menu()
             elif option == '9':
                 lin_zipper()
+            elif option == '10':
+                ac_main()
             elif option == '99':
                 g_auth(addr,username,passwd,secret)
             elif option == '0':

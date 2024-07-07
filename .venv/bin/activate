@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/sysadmin/Documents/coding/ciscoget/v4/final/.venv"
+VIRTUAL_ENV="/home/sysadmin/Documents/coding/ciscoget/v4_ac/.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
