@@ -42,7 +42,7 @@ def show_menu() -> None:
     print(Style.BRIGHT,Fore.CYAN,
           '[8]',
           Style.RESET_ALL,
-          'L og into a new switch'
+          ' Log into a new switch'
           )
     print(Style.BRIGHT,Fore.CYAN,
           '[9]',

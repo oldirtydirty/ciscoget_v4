@@ -80,8 +80,3 @@ def ac_main():
                 break
     except KeyboardInterrupt:
         return
-
-
-# if __name__ == '__main__':
-#     main()
-  
